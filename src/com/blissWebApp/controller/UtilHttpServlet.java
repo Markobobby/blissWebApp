@@ -33,8 +33,7 @@ public class UtilHttpServlet extends HttpServlet {
 		}
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		this.req = req;
 		this.resp = resp;
 		this.action = req.getPathInfo();
@@ -46,6 +45,7 @@ public class UtilHttpServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
+	
 
 	protected void displayView(final String viewName, final String controllerName) {
 		String controller = controllerName == null ? null : controllerName;
@@ -76,6 +76,8 @@ public class UtilHttpServlet extends HttpServlet {
 		controller = controller.substring(controller.lastIndexOf("Servlet") + 7).toLowerCase();
 
 		String viewName = this.action;
+//		List<Salle> s = new ArrayList<Salle>();
+
 
 		this.req.setAttribute("model", model);
 		try {

@@ -27,9 +27,10 @@
 			
 			<!-- génération auto de la bdd -->
 			<!-- <property name="hibernate.hbm2dll.auto">create/update</property> -->
-			
-			<mapping class="com.mastere.metier.Test"/>
-			<mapping class="com.mastere.metier.User"/>
+
+			<mapping class="com.blissWebApp.metier.Salle"/>
+			<mapping class="com.blissWebApp.metier.Machine"/>
+			<mapping class="com.blissWebApp.metier.User"/>
 			
 		</session-factory>
 	</hibernate-configuration>

@@ -29,4 +29,13 @@ public class ServletHome extends UtilHttpServlet {
     	model.put("salle", salle);
     	this.displayView(model);
     }
+    public void connexion(){
+    	this.displayView(null);
+    }
+    public void managementmachine(){
+    	this.displayView(null);
+    }
+    public void managementroom(){
+    	this.displayView(null);
+    }
 }

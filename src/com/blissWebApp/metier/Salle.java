@@ -27,9 +27,5 @@ public class Salle {
 	public void setNomSalle(String nomSalle) {
 		this.nomSalle = nomSalle;
 	}
-
-
-	
-
 	
 }

@@ -1,0 +1,1 @@
+<h1>Gestion d'une machine</h1>

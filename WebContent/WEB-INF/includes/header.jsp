@@ -13,14 +13,16 @@
 	<link href="/blissWebApp/static/css/style.css" rel="stylesheet" >
 </head>
 <body>
-<div class="container">
 <header>
-	<nav>
-		<ul id="navigation">
-			<li><a href="index">Home</a></li>
-			<li><a href="managementroom">Gestion salle</a></li>
-			<li><a href="managementmachine">Gestion machine</a></li>
-			<li><a href="connexion">Connexion</a></li>
-		</ul>
-	</nav>
+	<div class="container">
+		<nav>
+			<ul id="navigation">
+				<li><a href="index">Home</a></li>
+				<li><a href="managementroom">Gestion salle</a></li>
+				<li><a href="managementmachine">Gestion machine</a></li>
+				<li><a href="connexion">Connexion</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
+<div class="container">

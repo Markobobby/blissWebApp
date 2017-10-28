@@ -19,15 +19,17 @@ public class ServletHome extends UtilHttpServlet {
 	private static final long serialVersionUID = 1L;
 	
     public void index(){
-    	Map<String, Object> model = new HashMap<String, Object>();
+    	//Map<String, Object> model = new HashMap<String, Object>();
     	List<Salle> salle= SalleDAO.getSalleList();
+    	/*
     	List<Machine> machine = null;
     	if(this.req.getMethod().equals("POST")){
-    	machine = MachineDAO.getMachineListBySalle(Integer.parseInt(this.getParam("nomSalle")));
+    		machine = MachineDAO.getMachineListBySalle(Integer.parseInt(this.getParam("nomSalle")));
     	}
     	model.put("machine", machine);
-    	model.put("salle", salle);
-    	this.displayView(model);
+    	*/
+    	//model.put("salle", salle);
+    	this.displayView(salle);
     }
     public void connexion(){
     	this.displayView(null);

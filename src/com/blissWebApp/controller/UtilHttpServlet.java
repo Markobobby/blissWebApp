@@ -39,8 +39,8 @@ public class UtilHttpServlet extends HttpServlet {
 		this.action = req.getPathInfo();
 		this.action = this.action.substring(1).toLowerCase();
 		try {
-			this.getClass().getMethod(this.action, null).invoke(this, null);
 			System.out.println(this.getClass().getMethod(this.action, null));
+			this.getClass().getMethod(this.action, null).invoke(this, null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -76,8 +76,6 @@ public class UtilHttpServlet extends HttpServlet {
 		controller = controller.substring(controller.lastIndexOf("Servlet") + 7).toLowerCase();
 
 		String viewName = this.action;
-//		List<Salle> s = new ArrayList<Salle>();
-
 
 		this.req.setAttribute("model", model);
 		try {
@@ -86,7 +84,7 @@ public class UtilHttpServlet extends HttpServlet {
 			req.getRequestDispatcher(dir).forward(this.req, this.resp);
 		} catch (Exception e) {
 			try {
-				this.resp.sendError(405, "La vue " + viewName + " est introuvable");
+				this.resp.sendError(404, "La vue " + viewName + " est introuvable");
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

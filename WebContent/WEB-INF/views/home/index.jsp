@@ -1,3 +1,4 @@
+<%@include file="/WEB-INF/includes/header.jsp"%>
 <form method="post" action="#">
 	<span>Choississez votre salle :</span>
 	<select id="roomSelected" name="nomSalle">
@@ -7,3 +8,4 @@
 	</select>
 	<input type="submit" id="selectRoomSubmit" value="valider">
 </form>
+<%@include file="/WEB-INF/includes/footer.jsp"%>

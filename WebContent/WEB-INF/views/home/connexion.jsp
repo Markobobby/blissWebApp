@@ -1,3 +1,4 @@
+<%@include file="/WEB-INF/includes/header.jsp"%>
 <div id="connexion">
 	<form id="connexionForm" method="post">
 		<table>
@@ -13,3 +14,4 @@
 		<input type="submit" value="valider">
 	</form>	
 </div>
+<%@include file="/WEB-INF/includes/footer.jsp"%>

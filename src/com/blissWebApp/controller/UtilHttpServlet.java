@@ -17,13 +17,11 @@ public class UtilHttpServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		this.req = req;
 		this.resp = resp;
-		System.out.println("do get utilServlet");
 		this.action = req.getPathInfo();
 
 		if (this.action == null || this.action.equals("/"))
 			this.action = "/index";
-
-		System.out.println("Util doGet - this action : " + this.action);
+		
 		this.action = this.action.substring(1).toLowerCase();
 		try {
 			this.getClass().getMethod(this.action, null).invoke(this, null);

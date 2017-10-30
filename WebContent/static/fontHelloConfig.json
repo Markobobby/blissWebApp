@@ -1,0 +1,108 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "44e04715aecbca7f266a17d5a7863c68",
+      "css": "plus",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "861ab06e455e2de3232ebef67d60d708",
+      "css": "minus",
+      "code": 59408,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9bc2902722abb366a213a052ade360bc",
+      "css": "spin6",
+      "code": 59449,
+      "src": "fontelico"
+    },
+    {
+      "uid": "486b835e9eebf54eee78ed12b4291b86",
+      "css": "euro",
+      "code": 61779,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bf45c39702763f1803b550c36a0ceb12",
+      "css": "cancel-squared",
+      "code": 59398,
+      "src": "entypo"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
+      "css": "left-open",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "gypcofts1tkouwkxbv8d33eanqpreyy9",
+      "css": "right-dir",
+      "code": 59397,
+      "src": "modernpics"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a78fa7f651c7a97f936d556c3a5dc1e2",
+      "css": "password",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M139.5 330.3C142.1 559.2 142.8 570.4 156.6 605.9 192.8 697.4 284.2 794.1 417.1 882.2 459.9 910.5 497.4 934.2 500 934.2 502.6 934.2 540.1 910.5 582.9 882.2 715.8 794.1 807.2 697.4 843.4 605.9 857.2 570.4 857.9 559.2 860.5 330.3L863.2 92.1 500 92.1 136.8 92.1 139.5 330.3ZM570.4 227.6C611.8 251.3 632.2 290.1 636.2 355.3 638.8 392.1 642.8 407.9 648.7 407.9 653.3 407.9 665.8 415.1 675.7 423.7L694.1 439.5 694.1 546.1 694.1 652.6 675.7 668.4C657.2 684.2 656.6 684.2 500 684.2 343.4 684.2 342.8 684.2 324.3 668.4L305.9 652.6 305.9 546.1 305.9 439.5 324.3 423.7C334.2 415.1 346.7 407.9 351.3 407.9 357.2 407.9 361.2 392.1 363.8 355.3 366.4 315.1 371.1 296.1 384.2 273.7 422.4 208.6 502.6 188.8 570.4 227.6ZM453.3 295.4C435.5 313.2 434.2 318.4 434.2 361.2L434.2 407.9 500 407.9 565.8 407.9 565.8 361.2C565.8 318.4 564.5 313.2 546.7 295.4 519.7 268.4 480.3 268.4 453.3 295.4Z",
+        "width": 947
+      },
+      "search": [
+        "111149-keys-and-locks"
+      ]
+    },
+    {
+      "uid": "757afacc32d82967975cbb3b45cfb41b",
+      "css": "desktop",
+      "code": 61704,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c76b7947c957c9b78b11741173c8349b",
+      "css": "attention",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "00391fac5d419345ffcccd95b6f76263",
+      "css": "attention-alt",
+      "code": 61738,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "ok",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "css": "check",
+      "code": 59401,
+      "src": "entypo"
+    }
+  ]
+}

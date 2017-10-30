@@ -16,8 +16,68 @@ header{
 			#navigation li a{
 				color : inherit;
 			}
-			#navigation li a:hoover{
-				liste-sytle : none;
+			#navigation li a:hover{
+				text-decoration : none;
+				background : #8e8e8e;
+			}
+.container form{
+	margin: 10px;
+	padding: 10px;
+}
+.container .load {
+	margin: 10px;
+	border: 1px solid #e7e7e7;
+	padding: 10px;
+	overflow: auto;
+	display: none;
+	position: relative;
+	min-width: 230px
+}
+	.container .load h3 {
+		color: #777;
+		margin-top: 10px;
+	}
+	.container .load .icon-cancel-squared{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #888888;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.container .load .icon-cancel-squared:hover{
+		color: #bb2121;
+	}
+	.container .load > .contentAgent{
+		display: flex;
+		flex-direction : row;
+		flex-wrap: wrap;
+	}
+		.container .load .contentAgent > .agent{
+			flex : 1 1 110px;
+			min-width: 110px;
+			display: flex;
+			flex-direction: column;
+		}
+		.container .load .contentAgent > .agent:hover{
+			box-shadow: 0 0 2px 0 #8c8c8c;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.container .load .contentAgent .agent:not(:first-child){
+			margin-left: 10px;
+		}
+			.container .load .contentAgent .agent > span{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			.container .load .contentAgent .agent .icon-desktop{
+				font-size: 70px;
+				color: #7b7b7b;
+				text-align: center;
+			}
+			.container .load .contentAgent .agent .alert{
+				margin: 0 10px 10px 10px;
 			}
 footer{
 	margin-top:10px;

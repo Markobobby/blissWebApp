@@ -20,6 +20,8 @@ public class ServletAjaxRequest extends UtilHttpServlet {
 		int idSalle = this.getParamAsInt("idSalle");
 		System.out.println(idSalle);
 		List<Machine> machines = MachineDAO.getMachineListBySalle(idSalle);
+		System.out.println(machines.get(0).getNomMachine());
+		System.out.println(machines.get(0).isEtat());
 		this.displayView(machines);
 	}
 }

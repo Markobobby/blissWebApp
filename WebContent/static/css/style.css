@@ -1,25 +1,18 @@
+
+/*	$HEADER + NAV
+	**************************************/
 header{
 	padding : 10px;
 	background: #9e9e9e;
 	color: #dedede;
 	margin-bottom: 10px;
 }
-	nav #navigation{
-		list-style: none;
-		width: 100%;
-		margin: 0;
-		padding: 0;
+	nav div ul li a .glyphicon {
+		margin-right: 5px;
 	}
-		#navigation li {
-			display: inline;
-		}
-			#navigation li a{
-				color : inherit;
-			}
-			#navigation li a:hover{
-				text-decoration : none;
-				background : #8e8e8e;
-			}
+	
+/*	$INDEX
+	**************************************/
 .container form{
 	margin: 10px;
 	padding: 10px;
@@ -85,3 +78,7 @@ footer{
 	background: #9e9e9e;
 	color: #dedede;
 }
+
+/*	$CONNEXION
+	**************************************/
+	

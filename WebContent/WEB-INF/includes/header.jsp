@@ -22,12 +22,18 @@
 				<a class="navbar-brand" href="index">BlissWebApp</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="managementmachine">Gestion salle</a></li>
-				<li><a href="managementroom">Gestion machine</a></li>
+				<c:if test="${sessionScope.USER != null}">
+					<li><a href="managementmachine">Gestion salle</a></li>
+					<li><a href="managementroom">Gestion machine</a></li>
+				</c:if>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="connexion"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<c:if test="${sessionScope.USER == null}">
+					<li><a href="connexion"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+				</c:if>
+				<c:if test="${sessionScope.USER != null}">
+					<li><a href="logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+				</c:if>
 			</ul>
 		</div>
 	</nav>

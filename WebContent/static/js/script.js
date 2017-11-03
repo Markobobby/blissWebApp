@@ -12,6 +12,8 @@ $(function(){
 			idSalle = $("#roomSelected option:selected").val(),
 			param = {idSalle : idSalle};
 		if($(".load").length == 0)
+			$("form").after("<div class='load'></div>");
+		
 		var i = 1;
 		jqXhrMonitoring = $.post(url, param, function(data){
 			var isVisible = $(".load").is(":visible");

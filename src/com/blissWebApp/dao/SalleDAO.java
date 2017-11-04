@@ -8,6 +8,20 @@ import com.blissWebApp.db.HibernateUtil;
 import com.blissWebApp.metier.Salle;
 
 public class SalleDAO {
+	public static void Save(Salle s){
+		HibernateUtil.getSession().saveOrUpdate(s);
+		try{
+			if(HibernateUtil.getSession().getTransaction().isActive())
+				HibernateUtil.getSession().getTransaction().commit();
+		}catch(Exception e){
+			HibernateUtil.getSession().getTransaction().rollback();
+			e.printStackTrace();
+		}finally{
+			if(HibernateUtil.getSession().isOpen())
+				HibernateUtil.getSession().close();
+		}
+	}
+	
 	public static List<Salle> getSalleList(){
 		try{
 			Query q;

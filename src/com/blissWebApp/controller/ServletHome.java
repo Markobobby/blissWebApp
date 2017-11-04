@@ -11,7 +11,7 @@ import com.blissWebApp.metier.User;
 
 @WebServlet("/home/*")
 public class ServletHome extends UtilHttpServlet {
-	// UserDAO userDao;
+	UserDAO userDao;
 	SalleDAO salleDao;
 	
 	private static final long serialVersionUID = 1L;
@@ -49,9 +49,20 @@ public class ServletHome extends UtilHttpServlet {
     }
     
     public void managementroom(){
-    	this.displayView(null);
+    	if(this.req.getMethod().equals("POST")){
+    		Salle s = new Salle();
+    		String nomSalle = this.getParam("nomSalle");
+      	s.setNomSalle(nomSalle);
+      	SalleDAO.Save(s);
+      	this.displayView(null);
+    	}else 
+    		this.displayView(null);
     }
     
+    public void addsalle(){
+    	System.out.println("method addSalle");
+    	this.displayView("addsalle", "home");
+    }
     public void logout(){
     	this.req.getSession().removeAttribute("USER");
     	redirect("/home/index");

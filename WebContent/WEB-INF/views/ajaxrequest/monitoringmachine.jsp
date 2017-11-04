@@ -6,6 +6,18 @@
 		<div class="agent" data-id-machine="${ machine.idMachine }">
 			<span>${machine.nomMachine}</span>
 			<div class="icon-desktop"></div>
+			<div class="urlMachine">
+				<span>IP :</span>
+				<span>${machine.urlMachine}</span>
+			</div>
+			<div class="ramMachine">
+				<span>RAM :</span>
+				<span>${machine.ram}</span>
+			</div>
+			<div class="disqueMachine">
+				<span>Disque :</span>
+				<span>${machine.disque}</span>
+			</div>
 			<c:if test="${machine.etat == '0'}">
 				<div class="alert alert-success">
 					<i class="icon-check"></i>

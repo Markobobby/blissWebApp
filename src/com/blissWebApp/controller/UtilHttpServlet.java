@@ -47,7 +47,6 @@ public class UtilHttpServlet extends HttpServlet {
 
 	protected void displayView(final String viewName, final String controllerName) {
 		String controller = controllerName == null ? null : controllerName;
-		System.out.println("displayView()");
 		if (controller == null) {
 			controller = this.getClass().getSimpleName();
 			System.out.println(controller);
@@ -70,11 +69,9 @@ public class UtilHttpServlet extends HttpServlet {
 
 	protected void displayView(Object model) {
 		String controller = this.getClass().getSimpleName();
-		System.out.println(controller);
 		controller = controller.substring(controller.lastIndexOf("Servlet") + 7).toLowerCase();
-
+		System.out.println(controller);
 		String viewName = this.action;
-
 		this.req.setAttribute("model", model);
 		try {
 			final String dir = "/WEB-INF/views/" + controller + "/" + viewName + ".jsp";

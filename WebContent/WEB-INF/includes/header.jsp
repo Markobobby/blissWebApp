@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>${title} - JEE</title>
+	<title>BlissWebApp</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="/blissWebApp/static/css/fontello-embedded.css" rel="stylesheet" >
 	<link href="/blissWebApp/static/css/animation.css" rel="stylesheet" >
@@ -23,8 +23,9 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<c:if test="${sessionScope.USER != null}">
-					<li><a href="managementmachine">Gestion salle</a></li>
-					<li><a href="managementroom">Gestion machine</a></li>
+					<li><a href="addsalle">addsalle</a></li>
+					<li><a href="managementroom">Ajout Salle</a></li>
+					<li><a href="managementmachine">Gestion machine</a></li>
 				</c:if>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

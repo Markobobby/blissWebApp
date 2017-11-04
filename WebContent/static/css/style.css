@@ -86,3 +86,35 @@ footer{
 /*	$CONNEXION
 	**************************************/
 	
+	#connexion{
+	text-align:center;
+	
+	}
+	
+	#connectionButtonValider
+	{
+		margin-top: 28px;
+	}
+	
+	#connexionForm
+	{
+	    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+	#formSalle{
+	
+	    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+	
+	#selectRoomSubmit{
+	margin-top: 28px;
+	}
+	
+	
+	
+	

@@ -1,5 +1,5 @@
 <%@include file="/WEB-INF/includes/header.jsp"%>
-<h1>gestion salle d'une salle</h1>
+<h3>Ajoutez une salle</h3>
 <form method="post">
 	<span>Nom salle</span>
 	<input type="text" name="nomSalle" >

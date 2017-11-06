@@ -1,7 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <span class="icon-cancel-squared" title="Fermer"></span>
-<h3>Salle ${model[0].idSalle} :</h3>
+<c:if test="${not empty model}"><h3>Salle ${model[0].idSalle} :</h3></c:if>
 <div class="contentAgent">
+	<c:if test="${empty model}"><span>Il n'y a pas de poste pour cette salle</span></c:if>
 	<c:forEach items="${model}" var="machine" varStatus="status">
 		<div class="agent" data-id-machine="${ machine.idMachine }">
 			<span>${machine.nomMachine}</span>

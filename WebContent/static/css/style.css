@@ -24,7 +24,8 @@ header{
 	overflow: auto;
 	display: none;
 	position: relative;
-	min-width: 230px
+	min-width: 230px;
+	font-family: lato;
 }
 	.container .load h3 {
 		color: #777;
@@ -51,9 +52,7 @@ header{
 			min-width: 110px;
 			display: flex;
 			flex-direction: column;
-		}
-		.container .load .contentAgent > .agent [class$="Machine"]{
-			padding: 0 20px;
+			max-width: 350px;
 		}
 		.container .load .contentAgent > .agent:hover{
 			box-shadow: 0 0 2px 0 #8c8c8c;
@@ -64,57 +63,103 @@ header{
 			margin-left: 10px;
 		}
 			.container .load .contentAgent .agent > span{
-				text-align: center;
-				margin-bottom: 10px;
+					text-align: center;
+					font-weight: bold;
+					margin-bottom: 10px;
+					font-size: 22px;
+					text-decoration: underline;
+					color: #676767;
+					text-transform: capitalize;
 			}
 			.container .load .contentAgent .agent .icon-desktop{
 				font-size: 70px;
 				color: #7b7b7b;
 				text-align: center;
+				margin-bottom: 10px;
+			}
+			.container .load .contentAgent > .agent [class$="Machine"]{
+				padding: 0 20px;
+				display : flex;
+				flex-direction: row;
+				margin-bottom: 3px;
+			}
+			.container .load .contentAgent > .agent [class$="Machine"] span{
+				flex : 1 1 0px;
+				border-bottom: 1px solid #e3deff;
+			}
+			.container .load .contentAgent > .agent [class$="Machine"] span:first-child{
+				font-weight: bold;
+				text-transform: uppercase;
+				padding-left: 7px;
+			}
+			.container .load .contentAgent > .agent [class$="Machine"] span:last-child{
+				color : green;
+				text-align: center;
 			}
 			.container .load .contentAgent .agent .alert{
-				margin: 0 10px 10px 10px;
+				margin: 5px 10px;
 			}
-footer{
-	/*
-	margin-top:10px;
-	padding: 10px;
-	background: #9e9e9e;
-	color: #dedede;*/
-}
-
 /*	$CONNEXION
 	**************************************/
-	
-	#connexion{
+#connexion{
 	text-align:center;
-	
-	}
-	
-	#connectionButtonValider
-	{
-		margin-top: 28px;
-	}
-	
-	#connexionForm
-	{
-	    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	}
-	#formSalle{
-	
-	    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	}
-	
-	#selectRoomSubmit{
+}
+
+#connectionButtonValider{
 	margin-top: 28px;
-	}
-	
-	
-	
+}
+
+#connexionForm{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#formSalle{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#selectRoomSubmit{
+	margin-top: 28px;
+}
+#roomSelected{
+	width: 50%
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}	
 	

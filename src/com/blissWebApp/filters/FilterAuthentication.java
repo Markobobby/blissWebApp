@@ -49,7 +49,8 @@ public class FilterAuthentication implements Filter {
 				url = req.getContextPath() + "/home/connexion";
 				try {
 					String redirect = req.getRequestURI();
-					req.getSession().setAttribute("redirect", redirect);
+					req.getSession().setAttribute("REDIRECT", redirect);
+					String x = req.getSession().getAttribute("REDIRECT").toString();
 					resp.sendRedirect(url);
 				} catch (Exception e) {
 					e.printStackTrace();

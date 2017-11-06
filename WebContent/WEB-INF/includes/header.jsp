@@ -23,8 +23,7 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<c:if test="${sessionScope.USER != null}">
-					<li><a href="addsalle">addsalle</a></li>
-					<li><a href="managementroom">Ajout Salle</a></li>
+					<li><a href="ajoutsalle">Ajout Salle</a></li>
 					<li><a href="managementmachine">Gestion machine</a></li>
 				</c:if>
 			</ul>

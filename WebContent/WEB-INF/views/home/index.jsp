@@ -3,7 +3,9 @@
 	<span>Choississez votre salle :</span>
 	<select id="roomSelected" name="nomSalle" class="form-control">
 		<c:forEach items="${model}" var="salle">
-			<option value="${salle.idSalle }">${salle.nomSalle}</option>
+			<c:if test="${salle.idSalle != 1 }">
+				<option value="${salle.idSalle }">${salle.nomSalle}</option>			
+			</c:if>
 		</c:forEach>
 	</select>
 	<input type="submit" id="selectRoomSubmit" value="valider"  class="btn btn-primary">

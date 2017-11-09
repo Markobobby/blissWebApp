@@ -14,7 +14,7 @@
 			<property name="connection.password"></property>
 			
 			<!--  pool -->
-			<property name="connection.pool_size">10</property>
+			<property name="connection.pool_size">50</property>
 			
 			<!-- Dialect SQL -->
 			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>

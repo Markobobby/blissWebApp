@@ -1,8 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <span class="icon-cancel-squared" title="Fermer"></span>
-<c:if test="${not empty model}"><h3>Salle ${model[0].idSalle} :</h3></c:if>
 <div class="contentAgent">
 	<c:if test="${empty model}"><span>Il n'y a pas de poste pour cette salle</span></c:if>
+	
 	<c:forEach items="${model}" var="machine" varStatus="status">
 		<div class="agent" data-id-machine="${ machine.idMachine }">
 			<span>${machine.nomMachine}</span>
@@ -19,16 +19,23 @@
 				<span>Disque :</span>
 				<span>${machine.disque}</span>
 			</div>
-			<c:if test="${machine.etat == '0'}">
+			<c:if test="${machine.etat > '0'}">
 				<div class="alert alert-success">
 					<i class="icon-check"></i>
-					<span>Ok</span>	
+					<span>${machine.message}</span>	
 				</div>
 			</c:if>
-			<c:if test="${machine.etat > '0'}">
+			<c:if test="${machine.etat == '0'}">
 				<div class="alert alert-warning">
 					<i class="icon-attention-alt"></i>
-					<span>Warning</span>	
+					<span>${machine.message}</span>
+				</div>
+			</c:if>
+			<span>${machine.dateDernierRecut}</span>
+			<c:if test="${machine.dateDernierRecut > 60}">
+				<div class="alert alert-warning">
+					<i class="icon-attention"></i>
+					<span>Machine Down !</span>
 				</div>
 			</c:if>
 		</div>

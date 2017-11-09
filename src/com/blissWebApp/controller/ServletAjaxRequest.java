@@ -1,15 +1,17 @@
 package com.blissWebApp.controller;
 
-import java.io.IOException;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import com.blissWebApp.dao.MachineDAO;
+import com.blissWebApp.dao.SalleDAO;
+import com.blissWebApp.db.HibernateUtil;
 import com.blissWebApp.metier.Machine;
+import com.blissWebApp.metier.Salle;
 
 @WebServlet("/ajaxRequest/*")
 public class ServletAjaxRequest extends UtilHttpServlet {
@@ -18,6 +20,14 @@ public class ServletAjaxRequest extends UtilHttpServlet {
 	public void monitoringmachine(){
 		int idSalle = this.getParamAsInt("idSalle");
 		List<Machine> machines = MachineDAO.getMachineListBySalle(idSalle);
+		for(int i=0; i<machines.size(); i++){
+			Date date = new Date();
+			long time = date.getTime()/1000;
+			int d = Integer.parseInt( machines.get(i).getDateDernierRecut() );
+			time = time - d;
+			machines.get(i).setDateDernierRecut(String.valueOf(time));
+		}
+		HibernateUtil.getSession().close();
 		this.displayView(machines);
 	}
 }

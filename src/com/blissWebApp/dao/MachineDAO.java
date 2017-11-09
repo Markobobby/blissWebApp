@@ -13,7 +13,9 @@ public class MachineDAO {
 		try{
 			Query q;
 			q = HibernateUtil.getSession().createQuery("from Machine where idSalle=?")
-			.setParameter(0, id);
+					.setParameter(0, id);
+			if(HibernateUtil.getSession().isOpen())
+				HibernateUtil.getSession().close();
 			List<Machine> listeMachine= q.list();
 			return (listeMachine);
 		}catch(Exception e){

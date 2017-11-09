@@ -27,6 +27,8 @@ public class SalleDAO {
 			Query q;
 			q = HibernateUtil.getSession().createQuery("from Salle");
 			List<Salle> listeSalle= q.list();
+			if(HibernateUtil.getSession().isOpen())
+				HibernateUtil.getSession().close();
 			return (listeSalle);
 		}catch(Exception e){
 			return null;
@@ -35,8 +37,11 @@ public class SalleDAO {
 
 	public static Salle getSalleByIdSalle(int idSalle) {
 		try{
-			return (Salle) HibernateUtil.getSession().createQuery("from Salle where idSalle=?")
+					Salle s = (Salle) HibernateUtil.getSession().createQuery("from Salle where idSalle=?")
 					.setParameter(0, idSalle);
+					if(HibernateUtil.getSession().isOpen())
+						HibernateUtil.getSession().close();
+					return s;
 		}catch(Exception e){
 			return null;
 		}

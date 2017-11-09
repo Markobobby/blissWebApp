@@ -27,7 +27,6 @@ public class ServletAjaxRequest extends UtilHttpServlet {
 			time = time - d;
 			machines.get(i).setDateDernierRecut(String.valueOf(time));
 		}
-		HibernateUtil.getSession().close();
 		this.displayView(machines);
 	}
 }

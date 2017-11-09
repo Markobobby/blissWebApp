@@ -41,7 +41,7 @@ $(function(){
 				console.log(jqXhr);
 				$(".load").html(jqXhr.responseText);
 			});
-		}, 15000);
+		}, 70000);
 		console.log("timeIdentifier");
 		console.log(timerIdentifier);
 	});

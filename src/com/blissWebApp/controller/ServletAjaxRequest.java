@@ -27,6 +27,14 @@ public class ServletAjaxRequest extends UtilHttpServlet {
 			int d = Integer.parseInt( machines.get(i).getDateDernierRecut() );
 			time = time - d;
 			machines.get(i).setDateDernierRecut(String.valueOf(time));
+			double number = Double.parseDouble(machines.get(i).getDisque());
+			int aux = (int)(number*100);
+			double result = aux/100d;
+			machines.get(i).setDisque(new Double(result).toString());
+			 number = Double.parseDouble(machines.get(i).getRam());
+			 aux = (int)(number*100);
+			result = aux/100d;
+			machines.get(i).setRam(new Double(result).toString());
 		}
 		this.displayView(machines);
 	}

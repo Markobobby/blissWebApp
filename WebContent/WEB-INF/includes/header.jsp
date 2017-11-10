@@ -1,13 +1,12 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Type" charset="UTF-8">
 	<title>BlissWebApp</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="/blissWebApp/static/css/fontello-embedded.css" rel="stylesheet" >
@@ -25,7 +24,7 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<c:if test="${sessionScope.USER != null}">
-					<li><a href="ajoutsalle">Ajout Salle</a></li>
+					<li><a href="ajoutsalle">Creation Salle</a></li>
 					<li><a href="managementmachine">Gestion machine</a></li>
 					<li><a href="logs">Historique</a></li>
 				</c:if>

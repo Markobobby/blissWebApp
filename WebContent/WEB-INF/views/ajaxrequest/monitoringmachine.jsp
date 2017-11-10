@@ -13,13 +13,13 @@
 			</div>
 			<div class="ramMachine">
 				<span>RAM :</span>
-				<span>${machine.ram}</span>
+				<span>${machine.ram} % use</span>
 			</div>
 			<div class="disqueMachine">
 				<span>Disque :</span>
-				<span>${machine.disque}</span>
+				<span>${machine.disque} % use</span>
 			</div>
-			<c:if test="${machine.dateDernierRecut < 60}">
+			<c:if test="${machine.dateDernierRecut < 120}">
 				<c:if test="${machine.etat > '0'}">
 					<div class="alert alert-success">
 						<i class="icon-check"></i>
@@ -33,7 +33,7 @@
 					</div>
 				</c:if>
 			</c:if>
-			<c:if test="${machine.dateDernierRecut > 60}">
+			<c:if test="${machine.dateDernierRecut > 120}">
 				<div class="alert alert-warning">
 					<i class="icon-attention"></i>
 					<span>Machine Down !</span>

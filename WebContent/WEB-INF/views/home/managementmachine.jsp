@@ -3,7 +3,7 @@
 <div class="ui-widget ui-helper-clearfix" >
 	<div id="listSalleout">
 		<ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
-			<c:forEach items="${model.machines}" var="m">
+			<c:forEach items="${model.machines}" var="m">	
 				<li class="ui-widget-content ui-corner-tr" id="${m.idMachine}">
 					<h5 class="ui-widget-header">"${m.nomMachine}"</h5>
 					<img src="" alt="${m.urlMachine}" width="96" height="72">
@@ -15,6 +15,7 @@
 	</div>
 	<div id="trash" class="ui-widget-content ui-state-default">
 		<select id="nomSalle" name="nom" size="1" onChange="chargerBase();">
+			<option>Choisir une salle</option>
 			<c:forEach items="${model.salles}" var="m1">
 		 		<option id="${m1.idSalle}">${m1.nomSalle}</option>
 		 	</c:forEach>

@@ -1,14 +1,18 @@
 package com.blissWebApp.controller;
 
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.annotation.WebServlet;
 
+import com.blissWebApp.dao.HistoDAO;
 import com.blissWebApp.dao.MachineDAO;
 import com.blissWebApp.dao.SalleDAO;
 import com.blissWebApp.dao.UserDAO;
+import com.blissWebApp.metier.Historique;
 import com.blissWebApp.metier.Machine;
 import com.blissWebApp.metier.Salle;
 import com.blissWebApp.metier.User;
@@ -61,16 +65,6 @@ public class ServletHome extends UtilHttpServlet {
   	this.displayView(m);
   }
   
-//  public void managementroom(){
-//  	List<Machine> machines = MachineDAO.getMachineListBySalle(1);
-//  	List<Salle> salles = SalleDAO.getSalleList();
-//  	Map<String, Object> m = new HashMap<String, Object>();
-//  	m.put("machines", machines);
-//  	m.put("salles", salles);
-//  	System.out.println("index");
-//  	this.displayView(m);
-//  }
-  
   public void logout(){
   	this.req.getSession().removeAttribute("USER");
   	redirect("/home/index");
@@ -85,5 +79,17 @@ public class ServletHome extends UtilHttpServlet {
 	  	this.displayView(null);
 		}else 
 			this.displayView(null);
+  }
+  
+  public void logs(){
+  	List<Historique> histo = HistoDAO.getHistoriqueList();
+  	for(int i = 0; i< histo.size(); i++){
+  		int val = Integer.parseInt(histo.get(i).getDate());
+  		Date date=new Date(val*1000L);
+	    SimpleDateFormat df2 = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+	    String dateText = df2.format(date);
+	    histo.get(i).setDate(dateText);
+  	}
+  	this.displayView(histo);
   }
 }

@@ -27,6 +27,7 @@
 				<c:if test="${sessionScope.USER != null}">
 					<li><a href="ajoutsalle">Ajout Salle</a></li>
 					<li><a href="managementmachine">Gestion machine</a></li>
+					<li><a href="logs">Historique</a></li>
 				</c:if>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

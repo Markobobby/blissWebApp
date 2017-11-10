@@ -23,6 +23,7 @@ public class ServletAjaxRequest extends UtilHttpServlet {
 		for(int i=0; i<machines.size(); i++){
 			Date date = new Date();
 			long time = date.getTime()/1000;
+			System.out.println(time);
 			int d = Integer.parseInt( machines.get(i).getDateDernierRecut() );
 			time = time - d;
 			machines.get(i).setDateDernierRecut(String.valueOf(time));

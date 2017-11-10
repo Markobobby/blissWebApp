@@ -19,19 +19,20 @@
 				<span>Disque :</span>
 				<span>${machine.disque}</span>
 			</div>
-			<c:if test="${machine.etat > '0'}">
-				<div class="alert alert-success">
-					<i class="icon-check"></i>
-					<span>${machine.message}</span>	
-				</div>
+			<c:if test="${machine.dateDernierRecut < 60}">
+				<c:if test="${machine.etat > '0'}">
+					<div class="alert alert-success">
+						<i class="icon-check"></i>
+						<span>${machine.message}</span>	
+					</div>
+				</c:if>
+				<c:if test="${machine.etat == '0'}">
+					<div class="alert alert-warning">
+						<i class="icon-attention-alt"></i>
+						<span>${machine.message}</span>
+					</div>
+				</c:if>
 			</c:if>
-			<c:if test="${machine.etat == '0'}">
-				<div class="alert alert-warning">
-					<i class="icon-attention-alt"></i>
-					<span>${machine.message}</span>
-				</div>
-			</c:if>
-			<span>${machine.dateDernierRecut}</span>
 			<c:if test="${machine.dateDernierRecut > 60}">
 				<div class="alert alert-warning">
 					<i class="icon-attention"></i>

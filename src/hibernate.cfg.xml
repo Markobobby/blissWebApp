@@ -29,6 +29,7 @@
 			<!-- <property name="hibernate.hbm2dll.auto">create/update</property> -->
 
 			<mapping class="com.blissWebApp.metier.Salle"/>
+			<mapping class="com.blissWebApp.metier.Historique"/>
 			<mapping class="com.blissWebApp.metier.Machine"/>
 			<mapping class="com.blissWebApp.metier.User"/>
 			

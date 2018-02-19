@@ -172,10 +172,9 @@ Fig. X: Xxxx</p>
         <th></th>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Mark MALAJ</li>
+                <li>Mouhsin Ghoraf</li>
+                <li>Antoine Faller</li>
             </ul>
         </td>
         <td></td>
@@ -221,12 +220,11 @@ Fig. X: Xxxx</p>
         <h4>Format de rendu</h4>
         <ul>
             <li>
-	    	<p>Les projets doivent faire l'objet d'un rendu électronique au plus tard&#8230;</p>
-		<ul>
-			<li>Le 03 Novembre 2017</li>
-		</ul>
-	    </li>
-
+                <p>Les projets doivent faire l'objet d'un rendu électronique au plus tard&#8230;</p>
+                <ul>
+                    <li>Le 03 Novembre 2017</li>
+                </ul>
+	        </li>
             <li>Les rendus doivent figurer sur <strong>un seul compte par groupe</strong>.</li>
             <li>Le mail de rendu est <tt>vincent.leclerc@ingesup.com</tt>.</li>
             <li>
@@ -235,7 +233,7 @@ Fig. X: Xxxx</p>
                     <li>Un <tt>.zip</tt> contenant l'arborescence du projet, immédiatement exploitable après création des bases de données et exécution des migrations.</li>
                     <li>Un <tt>AUTHORS.TXT</tt> listant les membres du groupe (prénom, nom), à raison d'un par ligne.  Il liste ensuite les responsabilités effectives de chacun dans le groupe.</li>
                 </ul>
-				<p>Le sujet du mail doit contenir votre section ainsi que le nom du projet.</p>
+                <p>Le sujet du mail doit contenir votre section ainsi que le nom du projet.</p>
                 <p>Les fichiers rendus peuvent aussi comprendre&nbsp;:</p>
                 <ul>
                     <li>Des documents de recherche créés pour le projet et fournissant plus de détails pour l'enseignant.</li>

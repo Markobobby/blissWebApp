@@ -110,88 +110,33 @@ Les étudiants sont encouragés (mais pas obligés) à mettre en place un systè
 ### IV.2. Exigences techniques: assurez-vous de les respecter !
 Cette section présente les exigences techniques pour votre rendu complet.  Tout manquement entraînera des pénalités.
 * **JEE**
---* Vous choisirez une architecture de type HTTP autant que possible, mais des actions complémentaires sur les contrôleurs sont autorisés.
---* Écrivez un maximum (intelligent) de tests, notamment unitaires (sur les modèles) et fonctionnels (sur les contrôleurs).
---* L'application doit fonctionner sans problèmes sur la configuration sur la configuration de votre choix, la configuration par défaut étant JEE/Servlet/JSP/JSTL/Hibernate.Vous pouvez si vous le désirez travailler sur une version supérieure à celle ci mais pas inférieur.
---* Exploitez au mieux les validateurs et les possibilités des définitions de relations
---* Les vues doivent être réalisées en HTML.  Dans les deux cas, tirez au mieux parti des *helpers*.
+	- Vous choisirez une architecture de type HTTP autant que possible, mais des actions complémentaires sur les contrôleurs sont autorisés.
+	- Écrivez un maximum (intelligent) de tests, notamment unitaires (sur les modèles) et fonctionnels (sur les contrôleurs).
+	- L'application doit fonctionner sans problèmes sur la configuration sur la configuration de votre choix, la configuration par défaut étant JEE/Servlet/JSP/JSTL/Hibernate.Vous pouvez si vous le désirez travailler sur une version supérieure à celle ci mais pas inférieur.
+	- Exploitez au mieux les validateurs et les possibilités des définitions de relations
+	- Les vues doivent être réalisées en HTML.  Dans les deux cas, tirez au mieux parti des *helpers*.
 * **Accès SGBD/R**
---* La base de données (qui n'est pas obligatoirement MySQL, mais votre application devra marcher sur MySQL si on le définit ainsi).
---* Limitez aux cas de performance aigüs l'utilisation manuelle de SQL (sauf pour préciser les options d'ordre ou de groupement dans les méthodes d'accès prédéfinies, ces options prenant des fragments de `select`).
+	- La base de données (qui n'est pas obligatoirement MySQL, mais votre application devra marcher sur MySQL si on le définit ainsi).
+	- Limitez aux cas de performance aigüs l'utilisation manuelle de SQL (sauf pour préciser les options d'ordre ou de groupement dans les méthodes d'accès prédéfinies, ces options prenant des fragments de `select`).
 * **Format de rendu**
---* Les projets doivent faire l'objet d'un rendu électronique au plus tard
+	- Les projets doivent faire l'objet d'un rendu électronique au plus tard
+		+ Le 03 Novembre 2017
+	- Les rendus doivent figurer sur <strong>un seul compte par groupe</strong>.
+	- Le mail de rendu est `vincent.leclerc@ingesup.com`
+	- Les fichiers rendus **doivent**  contenir:
+		+ Un `.zip` contenant l'arborescence du projet, immédiatement exploitable après création des bases de données et exécution des migrations.
+		+ Un `AUTHORS.TXT` listant les membres du groupe (prénom, nom), à raison d'un par ligne.  Il liste ensuite les responsabilités effectives de chacun dans le groupe.
+	- Le sujet du mail doit contenir votre section ainsi que le nom du projet.
+	- Les fichiers rendus peuvent aussi comprendre:
+		+ Des documents de recherche créés pour le projet et fournissant plus de détails pour l'enseignant.
+	- Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclusion est appropriée.
+### IV.3. Modalités de notation
+La notation du projet sera gérée comme suit:
+1. **Le groupe soutient son projet dans un créneau dédié**
+	- Le groupe est présent pour une <strong>soutenance de 15 minutes</strong> durant laquelle ses membres présentent chacun leurs travaux, <strong>font la démo de fonctionnement du produit</strong> et fournissent un retour d'expérience sur le projet (déroulement, points faciles, difficultés résolues ou non, tâches restantes).
+	- L'atmosphère sera légèrement formelle.  Toutefois, la soutenance a lieu sur une des machines des élèves du groupe.
+	- Chaque étudiant devra présenter spécifiquement sa contribution au projet.
+	- **Le planning de soutenances sera disponible dans ce sujet**
+	- Tout retard à la soutenance entraînera des pénalités sur la notation.
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf8" /></head>
-<body onload="return initTOC()"
-<h3 id="tech-requirements"></h3>
-
-<p></p>
-
-<ul>
-    <li>
-        <h4></h4>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </li>
-    <li>
-        <h4></h4>
-        <ul>
-            <li></li>
-	    <li></li>
-	</ul>
-    </li>
-    <li>
-        <h4></h4>
-        <ul>
-            <li>
-                <p>&#8230;</p>
-                <ul>
-                    <li></li>
-                </ul>
-	        </li>
-            <li>Les rendus doivent figurer sur <strong>un seul compte par groupe</strong>.</li>
-            <li>Le mail de rendu est <tt>vincent.leclerc@ingesup.com</tt>.</li>
-
-                <p>Les fichiers rendus <strong>doivent</strong> contenir&nbsp;:</p>
-                <ul>
-                    <li>Un <tt>.zip</tt> contenant l'arborescence du projet, immédiatement exploitable après création des bases de données et exécution des migrations.</li>
-                    <li>Un <tt>AUTHORS.TXT</tt> listant les membres du groupe (prénom, nom), à raison d'un par ligne.  Il liste ensuite les responsabilités effectives de chacun dans le groupe.</li>
-                </ul>
-                <p>Le sujet du mail doit contenir votre section ainsi que le nom du projet.</p>
-                <p>Les fichiers rendus peuvent aussi comprendre&nbsp;:</p>
-                <ul>
-                    <li>Des documents de recherche créés pour le projet et fournissant plus de détails pour l'enseignant.</li>
-                </ul>
-                <p>Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclusion est appropriée.</p>
-        </ul>
-    </li>
-</ul>
-
-<h3 id="grading-mechanism">IV.3. Modalités de notation</h3>
-
-<p>La notation du projet sera gérée comme suit&nbsp;:</p>
-
-<ol>
-    <li>
-        <h4>Le groupe soutient son projet dans un créneau dédié</h4>
-        <p>Le groupe est présent pour une <strong>soutenance de 15 minutes</strong> durant laquelle ses membres présentent chacun leurs travaux, <strong>font la démo de fonctionnement du produit</strong> et fournissent un retour d'expérience sur le projet (déroulement, points faciles, difficultés résolues ou non, tâches restantes).</p>
-        <p>L'atmosphère sera légèrement formelle.  Toutefois, la soutenance a lieu sur une des machines des élèves du groupe.</p>
-        <p>Chaque étudiant devra présenter spécifiquement sa contribution au projet.</p>
-        <p><strong>Le planning de soutenances sera disponible dans ce sujet</strong>.</p>
-
-        <p>tout retard à la soutenance entraînera des pénalités sur la notation.</p>
-    </li>
-</ol>
-
-
-<p id="footer">&copy; 2017 VINCENT LECLERC - INGESUP.  Toute mise à jour du sujet sera annoncée.</p>
-</body>
-</html>
+&copy; 2017 VINCENT LECLERC - INGESUP.  Toute mise à jour du sujet sera annoncée.

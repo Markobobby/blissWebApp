@@ -4,10 +4,10 @@ Projet Mastère 2 Web Application en JEE. Système de supervision de parc inform
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-    ### Bliss :: Projet JEE
+    
 </head>
 <body onload="return initTOC()">
-
+## Bliss :: Projet JEE
 <h1>Bliss<br />
 <span class="subTitle">Projet JEE </span></h1>
 

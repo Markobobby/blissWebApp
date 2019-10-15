@@ -7,7 +7,7 @@ Projet Mastère 2 Web Application en JEE. Système de supervision de parc inform
     
 </head>
 <body onload="return initTOC()">
-## Bliss :: Projet JEE
+<h4>Bliss :: Projet JEE</h4>
 <h1>Bliss<br />
 <span class="subTitle">Projet JEE </span></h1>
 
@@ -207,7 +207,7 @@ Fig. X: Xxxx</p>
 	        </li>
             <li>Les rendus doivent figurer sur <strong>un seul compte par groupe</strong>.</li>
             <li>Le mail de rendu est <tt>vincent.leclerc@ingesup.com</tt>.</li>
-            <li>
+
                 <p>Les fichiers rendus <strong>doivent</strong> contenir&nbsp;:</p>
                 <ul>
                     <li>Un <tt>.zip</tt> contenant l'arborescence du projet, immédiatement exploitable après création des bases de données et exécution des migrations.</li>
@@ -219,7 +219,6 @@ Fig. X: Xxxx</p>
                     <li>Des documents de recherche créés pour le projet et fournissant plus de détails pour l'enseignant.</li>
                 </ul>
                 <p>Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclusion est appropriée.</p>
-            </li>
         </ul>
     </li>
 </ul>

@@ -4,7 +4,7 @@ Projet Mastère 2 Web Application en JEE. Système de supervision de parc inform
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-    <title>Bliss :: Projet JEE </title>
+    ### Bliss :: Projet JEE
 </head>
 <body onload="return initTOC()">
 
@@ -157,31 +157,11 @@ Fig. X: Xxxx</p>
 <p>Ce projet est à développer en <strong>groupes de 4</strong>.</p>
 <p>Les soutenances/rendus auront lieu le Vendredi 3 Novembre 2017</p>
 
-<table>
-<thead>
-    <tr>
-        <th>Nom du groupe</th>
-        <th>Membres</th>
-        <th>Soutenance</th>
-    </tr>
-</thead>
-<tbody>
-  <tr><th colspan="3">MASTERE 1/2 INGESUP</th></tr>
 
-	 <tr>
-        <th></th>
-        <td>
-            <ul>
-                <li>Mark MALAJ</li>
-                <li>Mouhsin Ghoraf</li>
-                <li>Antoine Faller</li>
-            </ul>
-        </td>
-        <td></td>
-    </tr>
-
-</tbody>
-</table>
+#### Membres
+* Mark MALAJ
+* Mouhsin Ghoraf
+* Antoine Faller
 
 <p>Tous les groupes seront définis en cours, sous la supervision de l'enseignant.  Les groupes s'enregistrent avec un nom de groupe ainsi que les noms de leurs membres.</p>
 
@@ -256,7 +236,7 @@ Fig. X: Xxxx</p>
         <p>Chaque étudiant devra présenter spécifiquement sa contribution au projet.</p>
         <p><strong>Le planning de soutenances sera disponible dans ce sujet</strong>.</p>
 
-        <p>Note&nbsp;: tout retard à la soutenance entraînera des pénalités sur la notation.</p>
+        <p>tout retard à la soutenance entraînera des pénalités sur la notation.</p>
     </li>
 </ol>
 
